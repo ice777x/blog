@@ -1,5 +1,5 @@
 import PostCard from "@/components/PostCard";
-import { Post } from "@prisma/client";
+import {Post} from "@prisma/client";
 
 async function getPosts() {
   const res = await fetch("http://localhost:3000/api/posts", {

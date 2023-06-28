@@ -1,3 +1,4 @@
+"use client";
 import TextEditor from "@/components/TextEditor";
 import React from "react";
 

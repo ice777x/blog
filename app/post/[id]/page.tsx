@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import { prisma } from "@/lib/db";
-import { getReadingTime } from "@/lib/util";
+import {prisma} from "@/lib/db";
+import {getReadingTime} from "@/lib/util";
 
 async function getPosts(id: string) {
   const res = await prisma.post.findUnique({
@@ -12,13 +12,8 @@ async function getPosts(id: string) {
   return res;
 }
 
-export default async function Page({
-  params: { id },
-}: {
-  params: { id: string };
-}) {
+export default async function Page({params: {id}}: {params: {id: string}}) {
   const post = await getPosts(id);
-  console.log(post);
   return (
     <div className="pb-12">
       <div
@@ -33,11 +28,7 @@ export default async function Page({
         <div className="flex items-center justify-between w-full">
           <div className="flex items-center w-full">
             <div className="border-t border-dashed w-full pt-4">
-              <p className="text-sm font-medium text-gray-300">
-                <a href="#" className="hover:underline">
-                  ice777x
-                </a>
-              </p>
+              <div className="text-sm text-gray-500">swagger</div>
               <div className="flex space-x-1 text-sm text-gray-500">
                 <time dateTime="2020-03-16">Mar 16, 2020</time>
                 <span aria-hidden="true">&middot;</span>

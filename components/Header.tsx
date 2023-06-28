@@ -12,11 +12,6 @@ export default function Header() {
               Home
             </Link>
           </div>
-          <div className="text-sm font-medium text-gray-300">
-            <Link href="/edit" className="hover:underline">
-              Edit
-            </Link>
-          </div>
         </div>
       </div>
     </header>
