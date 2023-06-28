@@ -1,10 +1,10 @@
 "use client";
-import React, { useEffect } from "react";
-import { Editor } from "react-draft-wysiwyg";
-import { convertToRaw } from "draft-js";
+import React, {useEffect} from "react";
+import {Editor} from "react-draft-wysiwyg";
+import {convertToRaw} from "draft-js";
 import draftToHtml from "draftjs-to-html";
 import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
-import { useRouter } from "next/navigation";
+import {useRouter} from "next/navigation";
 
 const cred = process.env.NEXT_PUBLIC_TPASS;
 export default function TextEditor() {

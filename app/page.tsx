@@ -2,7 +2,7 @@ import PostCard from "@/components/PostCard";
 import {Post} from "@prisma/client";
 
 async function getPosts() {
-  const res = await fetch("http://localhost:3000/api/posts", {
+  const res = await fetch("https://swagger-gamma.vercel.app/api/posts", {
     cache: "no-store",
   });
   const data = await res.json();
